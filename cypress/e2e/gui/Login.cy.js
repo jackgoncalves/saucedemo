@@ -26,7 +26,7 @@ describe('Login', () => {
 
   })
 
-  const usuarios = require('../fixtures/usuarios.json')
+  const usuarios = require('../../fixtures/usuarios.json')
   usuarios.forEach((usuario) => {
     it(`Validando outros Logins válido ${usuario.userName}`,() => {
       cy.outrosUsuarios(usuario)

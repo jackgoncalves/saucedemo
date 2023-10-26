@@ -40,7 +40,6 @@ Cypress.Commands.add('adicionarCarrinho', () => {
         .find('.inventory_item_name')
         .contains('Sauce Labs Backpack')
         .should('be.visible')
-        .parent()
         .click()
 
     cy.contains('Add to cart').click()
